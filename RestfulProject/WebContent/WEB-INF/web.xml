@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>RestfulProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>UserController</display-name>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>br.com.gustu.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/UserController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>RedirectController</display-name>
+		<servlet-name>RedirectController</servlet-name>
+		<servlet-class>br.com.gustu.controller.RedirectController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RedirectController</servlet-name>
+		<url-pattern>/RedirectController</url-pattern>
+	</servlet-mapping>
+</web-app>
